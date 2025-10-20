@@ -1,42 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dr. Paul J. Watson – Website Update in Progress</title>
   <style>
-    body { font-family: Georgia, serif; margin: 0; padding: 0; background-color: #fdfdfd; color: #222; text-align: center; line-height: 1.6; }
-    header { background-color: #ffd966; padding: 1em; font-weight: bold; border-bottom: 2px solid #e0b000; }
-    nav { background-color: #f2c94c; text-align: center; padding: 0.6em 0; }
-    nav a { color: #222; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    img { max-width: 90%; height: auto; margin: 20px auto; display: block; }
-    hr { border: none; height: 2px; background: linear-gradient(to right, #ccc, #666, #ccc); margin: 30px auto; width: 80%; }
-    section { max-width: 900px; margin: 0 auto; padding: 0 1em; text-align: left; }
-    h1, h2 { text-align: center; }
-    footer { margin: 40px 0; font-size: 1.1em; }
-    .alerts { text-align: left; max-width: 900px; margin: 0 auto; }
-    .alerts ul { margin: 0; padding: 0 1.5em;	}
-    .alerts li { margin-bottom: .5em; padding-left: 2.6em text-indent: -1.4em; }
-    .caption { font-style: italic; text-align: center; }
-    .squiggly { border: none; height: 20px;
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffd966;
+      padding: 1em;
+      font-weight: bold;
+      border-bottom: 2px solid #e0b000;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .alert-icon {
+      font-size: 1.8em;
+      margin-right: 1em;
+      margin-top: 0.1em;
+    }
+
+    .alerts {
+      max-width: 900px;
+      font-size: 1.1em;
+    }
+
+    .alerts ul {
+      margin: 0;
+      padding-left: 1.2em;
+      list-style-type: disc;
+    }
+
+    .alerts li {
+      margin-bottom: 0.6em;
+      text-indent: -1.4em;
+      padding-left: 1.4em;
+    }
+
+    nav {
+      background-color: #f2c94c;
+      text-align: center;
+      padding: 0.6em 0;
+    }
+
+    nav a {
+      color: #222;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 30px auto 0;
+      padding: 0 1em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .intro-text {
+      flex: 1 1 400px;
+      min-width: 260px;
+    }
+
+    .intro img {
+      flex: 1 1 250px;
+      max-width: 300px;
+      height: auto;
+      margin: 20px auto;
+    }
+
+    @media (max-width: 768px) {
+      .intro {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .intro img {
+        order: 2;
+        max-width: 85%;
+        margin-top: 20px;
+      }
+
+      .intro-text {
+        order: 1;
+        width: 100%;
+      }
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, #ccc, #666, #ccc);
+      margin: 30px auto;
+      width: 80%;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1em;
+      text-align: left;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    .caption {
+      font-style: italic;
+      text-align: center;
+    }
+
+    .squiggly {
+      border: none;
+      height: 20px;
       background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20"><path d="M0 10 Q 25 0 50 10 T 100 10 T 150 10 T 200 10" stroke="%23666" fill="transparent" stroke-width="2"/></svg>') repeat-x;
-      background-size: 200px 20px; margin: 40px auto; width: 90%; }
+      background-size: 200px 20px;
+      margin: 40px auto;
+      width: 90%;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
+    <div class="alert-icon">⚠️</div>
     <div class="alerts">
       <ul>
-        <li>⚠️ Call for independent study students (Sierra Dome spider project).</li>
-        <li>⚠️ Spring 2026 course opportunity — The Evolution of Religiosity — scroll down for details and syllabus.</li>
-        <li>⚠️ Website update in progress — full site under construction.</li>
+        <li>Call for independent study students – Sierra Dome spider project.</li>
+        <li>Spring 2026 course opportunity — The Evolution of Religiosity — scroll down for details and syllabus.</li>
+        <li>Website update in progress — full site under construction.</li>
       </ul>
     </div>
   </header>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a> |
     <a href="research.html">Research</a> |
@@ -45,53 +165,57 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Portrait -->
-  <img src="portrait.jpg" alt="Portrait of Dr. Paul J. Watson">
+  <!-- Intro Section with Portrait -->
+  <div class="intro">
+    <div class="intro-text">
+      <h1>Website Update in Progress</h1>
+      <p>The official website for Dr. Paul J. Watson is transferring to a new home.</p>
 
-  <h1>Website Update in Progress</h1>
-  <p>The official website for Dr. Paul J. Watson is transferring to a new home.<br>
-  Please check back soon to see the updated site, including course information, publications, and research opportunities.</p>
+      <hr>
 
-  <hr>
+      <!-- Independent Study Section -->
+      <section>
+        <h2>Independent Study Research Invitation – Summer 2026</h2>
 
-  <!-- Independent Study Section -->
-  <section>
-    <h2>Independent Study Research Invitation – Summer 2026</h2>
-    <p>I am seeking one or two independent study students for the summer of 2026 to work with me for 8 weeks or more at 
-    <a href="https://flbs.umt.edu/newflbs/">Flathead Lake Biological Station</a>. I have had many fine assistants over the years 
-    helping me study the Sierra Dome Spider. But now, I am looking for individuals who, in addition to wanting a grad school prep research experience, 
-    could seriously consider continuing the deep study of the Sierra Dome spider’s sexual selection system as a central part of their
-    life’s work, as I have done. In other words, at the age of 68, still healthy and loving the work, I am looking for a scientific heir.</p>
-    
-    <p>There is massive opportunity available to the right person to continue studying this amazing model system long-term:
-    solidifying and expanding behavioral observations (including female-specific sperm utilization patterns),
-    adding new research elements needed to fully characterize the complexity of this mating system and to elucidate its evolution. 
-    My emphasis now, since 2024, is documenting not just species-typical patterns of intra- and intersexual behaviors, 
-    but also the diverse ways that individuals of both sexes develop to optimize both mind and body in an integrated way 
-    for playing the mating game.</p>
-    
-    <p>There is also potential for a wide range of not just relevant but essential molecular biological investigations — for example,
-    exploring how rickettsial diseases have affected the evolution of the mating system and individual development,
-    and how microbiomes and their interactions with genotypes and gene expression patterns influence individual developmental optimizations —
-    how everything from genes to microbes shapes the “personality development” of individual spiders in ecological time.</p>
-    
-    <p>As part of this offer, I seek coauthors to assist me in publishing a considerable backlog of material —
-    ranging from copious raw data (e.g., on individual variation in courtship energetics) to almost completed manuscripts.
-    I would only claim secondary or last authorship.</p>
-    
-    <p>It is exceedingly rare to find a complex sexual selection system so fantastically observable and manipulable
-    in both the field and the lab: Consider letting me show YOU the ropes and hand off this stunning model study system
-    to YOU, young investigator. Time is limited. I have limited but appreciable funds to help support you
-    as you join me in continuing this unusually long-term and in-depth research.</p>
+        <p>I am seeking one or two independent study students for the summer of 2026 to work with me for 8 weeks or more at 
+        <a href="https://flbs.umt.edu/newflbs/">Flathead Lake Biological Station</a>. I have had many fine assistants over the years 
+        helping me study the Sierra Dome Spider. But now, I am looking for individuals who, in addition to wanting a grad school prep research experience, 
+        could seriously consider continuing the deep study of the Sierra Dome spider’s sexual selection system as a central part of their
+        life’s work, as I have done. In other words, at the age of 68, still healthy and loving the work, I am looking for a scientific heir.</p>
 
-    <!-- Double Sperm Web Photo -->
-    <img src="doublesperm.jpg" alt="Lucky double sperm web in Sierra Dome spider">
-    <p class="caption">Lucky Sighting of a Double Sperm Web. Constructed in the dome of a female's web between copulatory courtship and insemination phase copulation in the Sierra Dome spider. Join me in continuing the study, and you too can be this lucky.</p>
+        <p>There is massive opportunity available to the right person to continue studying this amazing model system long-term:
+        solidifying and expanding behavioral observations (including female-specific sperm utilization patterns),
+        adding new research elements needed to fully characterize the complexity of this mating system and to elucidate its evolution.</p>
 
-    <!-- Spider Photo -->
-    <img src="spider.jpg" alt="Sierra Dome spider, male left, female right">
-    <p class="caption">Sierra Dome spider (adult instar). Male left, female right.</p>
-  </section>
+        <p>My emphasis now, since 2024, is documenting not just species-typical patterns of intra- and intersexual behaviors,
+        but also the diverse ways that individuals of both sexes develop to optimize both mind and body in an integrated way 
+        for playing the mating game.</p>
+
+        <p>There is also potential for a wide range of not just relevant but essential molecular biological investigations — for example,
+        exploring how rickettsial diseases have affected the evolution of the mating system and individual development,
+        and how microbiomes and their interactions with genotypes and gene expression patterns influence individual developmental optimizations —
+        how everything from genes to microbes shapes the “personality development” of individual spiders in ecological time.</p>
+
+        <p>As part of this offer, I seek coauthors to assist me in publishing a considerable backlog of material — 
+        ranging from copious raw data (e.g., on individual variation in courtship energetics) to almost completed manuscripts. 
+        I would only claim secondary or last authorship.</p>
+
+        <p>It is exceedingly rare to find a complex sexual selection system so fantastically observable and manipulable
+        in both the field and the lab: Consider letting me show YOU the ropes and hand off this stunning model study system
+        to YOU, young investigator. Time is limited. I have limited but appreciable funds to help support you
+        as you join me in continuing this unusually long-term and in-depth research.</p>
+
+        <img src="doublesperm.jpg" alt="Lucky double sperm web in Sierra Dome spider" />
+        <p class="caption">Lucky Sighting of a Double Sperm Web. Constructed in the dome of a female's web between copulatory courtship and insemination phase copulation in the Sierra Dome spider. Join me in continuing the study, and you too can be this lucky.</p>
+
+        <img src="spider.jpg" alt="Sierra Dome spider, male left, female right" />
+        <p class="caption">Sierra Dome spider (adult instar). Male left, female right.</p>
+      </section>
+    </div>
+
+    <!-- Portrait -->
+    <img src="portrait.jpg" alt="Portrait of Dr. Paul J. Watson" />
+  </div>
 
   <hr>
 
@@ -106,9 +230,9 @@
     for asking truly cutting-edge questions of broad interest about the evolution of this species’ behavior.</p>
   </section>
 
-  <hr class="squiggly">
+  <hr class="squiggly" />
 
-  <!-- Course Section -->
+  <!-- Course Info (Unchanged) -->
   <section>
     <h2>Spring 2026 – BIOL 419/519 Section 2: The Evolution of Religiosity and Human Coalitional Psychology</h2>
 
@@ -117,20 +241,20 @@
     of religiosity and human coalitionary psychology, exploring how deeply rooted cognitive and emotional systems shape human 
     spirituality, moral reasoning, and group behavior.</p>
 
-    <p><strong>Meeting Schedule:</strong> Tuesdays and Thursdays, 11:00 a.m. – 12:15 p.m.<br>
+    <p><strong>Meeting Schedule:</strong> Tuesdays and Thursdays, 11:00 a.m. – 12:15 p.m.<br />
     <strong>Location:</strong> Room 258, Castetter Hall (Biology Building).</p>
 
     <p><strong>Enrollment Details:</strong> Maximum enrollment is 22 students. Admission is by <em>permission of instructor only</em>. 
     Interested students should contact Dr. Watson by email (<a href="mailto:pwatson@unm.edu">pwatson@unm.edu</a>) 
     to arrange a brief conversation—by phone or in person—prior to receiving permission to enroll.</p>
 
-    <p><strong>Contact Information:</strong><br>
-    Dr. Paul J. Watson<br>
-    Department of Biology, University of New Mexico<br>
-    📧 Email: <a href="mailto:pwatson@unm.edu">pwatson@unm.edu</a><br>
+    <p><strong>Contact Information:</strong><br />
+    Dr. Paul J. Watson<br />
+    Department of Biology, University of New Mexico<br />
+    📧 Email: <a href="mailto:pwatson@unm.edu">pwatson@unm.edu</a><br />
     📱 Phone: <a href="tel:+15056813391">505-681-3391</a></p>
 
-    <p><strong>Course Description:</strong><br>
+    <p><strong>Course Description:</strong><br />
     Now entering its 17th edition, this unique evolutionary psychology seminar investigates both the evolutionary origins and potential 
     adaptive significance of cross-cultural, species-typical aspects of religious experience, belief, and practice. The course is a science 
     seminar that also encourages evolutionarily informed introspection and self-discovery. It is <em>not</em> an assault on religious belief 
@@ -140,12 +264,12 @@
     <p>The latest version of the syllabus is available here:
     <a href="Watson_Syllabus_v8.2_Spring2026.pdf" target="_blank">Download Syllabus (PDF)</a>.</p>
 
-    <img src="course.jpg" alt="Dr. Watson teaching outdoors">
+    <img src="course.jpg" alt="Dr. Watson teaching outdoors" />
     <p class="caption">Pointing out things concerning our shared psychological landscape since ca. 1980.</p>
   </section>
 
   <footer>
-    📧 Email: <a href="mailto:pwatson@unm.edu">pwatson@unm.edu</a><br>
+    📧 Email: <a href="mailto:pwatson@unm.edu">pwatson@unm.edu</a><br />
     📱 Cell: <a href="tel:+15056813391">505-681-3391</a>
   </footer>
 
