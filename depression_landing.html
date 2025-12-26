@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rethinking Depression: From Malfunction to Social Navigation?</title>
+  <style>
+    
+    :root {
+      /* Lighter Starry-Night-inspired palette (readability-first) */
+      --bg: #d6e4f4;           /* slightly darker pale sky blue */
+      --fg: #000000;           /* carbon black text */
+      --card: rgba(255,255,255,0.78);
+      --card-border: rgba(0,0,0,0.10);
+      --accent: #f2c94c;       /* match index.html button color */
+      --accent-border: #e0b000;
+      --link: #0b3c8a;
+      --maxw: 900px;
+    }
+
+
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: rgba(242, 201, 76, 0.95);
+      text-align: center;
+      padding: 0.6em 0;
+    }
+    nav a {
+      color: #222;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    a { color: var(--link); text-decoration: underline; }
+    a:hover { text-decoration: none; }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 28px auto 40px;
+      padding: 0 1em;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      align-items: flex-start;
+    }
+
+    .text {
+      flex: 1 1 520px;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      backdrop-filter: blur(2px);
+    }
+
+    h1 {
+      font-size: 2.0em;
+      margin: 0 0 0.6em 0;
+      text-align: left;
+    }
+
+    p { margin: 0 0 1em 0; font-size: 1.12em; }
+
+    ul {
+      margin: 0.5em 0 1.1em 1.2em;
+      padding: 0;
+      font-size: 1.12em;
+    }
+    li { margin-bottom: 0.55em; }
+
+    .art {
+      flex: 0 1 320px;
+      max-width: 360px;
+    }
+    .art img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      display: block;
+      background: rgba(255,255,255,0.06);
+    }
+    .caption {
+      text-align: center;
+      font-style: italic;
+      margin-top: 10px;
+      opacity: 0.92;
+    }
+
+    .buttons {
+      max-width: var(--maxw);
+      margin: 28px auto 0;
+      padding: 0 1em 10px;
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .round-btn {
+      width: 170px;
+      height: 170px;
+      border-radius: 999px;
+      background: var(--accent);
+      border: 3px solid var(--accent-border);
+      color: #111;
+      font-weight: bold;
+      font-size: 1.05em;
+      line-height: 1.15;
+      padding: 14px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .round-btn:hover { filter: brightness(0.98); transform: translateY(-1px); }
+    .round-btn:active { transform: translateY(0px); }
+
+    footer {
+      text-align: center;
+      margin: 34px 0 30px;
+      font-size: 1.05em;
+      opacity: 0.95;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.65em; }
+      .round-btn { width: 150px; height: 150px; font-size: 1.0em; }
+    }
+
+    .float-art {
+      float: right;
+      width: 320px;
+      max-width: 45%;
+      margin: 0 0 14px 18px;
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      background: rgba(255,255,255,0.06);
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .float-art {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 12px auto 16px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="research.html">Research</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="cv.html">CV</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="text">
+        <h1>Rethinking Depression: From Malfunction to Social Navigation?</h1>
+        <img class="float-art" src="starry_night.jpg" alt="Starry Night" loading="lazy" />
+
+
+        <p>The Social Navigation / Niche-Change Hypothesis (SNH) proposes that some episodes of severe depression are not just breakdowns of mood control, but a risky, high-gain strategy sometimes recruited when a person is trapped in an untenable social niche and ordinary negotiation has failed. </p>
+
+        <p>SNH is not a claim that “depression is good for you,” or that all low mood or major depressive disorder is adaptive. Many episodes are likely misfires, driven primarily by disease, drugs, neurodegeneration, or evolutionary mismatch. The hypothesis is intentionally narrow: it targets a specific trigger class of depressive episodes that may nevertheless be surprisingly common in both traditional human societies and modern social ecologies.</p>
+
+        <p>SNH proposes that both minor depressive states and a particular “high-gain” depressive mode are recruited under specific conditions:</p>
+
+        <ul>
+          <li>Non–point-source entrapment - stuck in a web of obligations and vetoes enforced by multiple partners, not a single villain.</li>
+          <li>A better niche is visible but blocked - a realistically better life configuration is in sight, but unreachable without cooperation.</li>
+          <li>Ordinary bargaining has failed - requests and small adjustments haven’t moved the system.</li>
+        </ul>
+
+        <p>SNH is a testable evolutionary model, not a poetic metaphor. This site lays out the hypothesis, its limits, and a research agenda designed to either support it—or falsify it—by confronting its predictions head on.</p>
+
+        <p>It predicts, for example, that in true “socioeconomic entrapment” depressions, remission should track concrete niche‑change events - documented concessions, exits, or new role commitments—better than it tracks time, generic support, or medication alone. It also predicts distinctive patterns of effort, motivation, and network dynamics that can be checked against real data.</p>
+
+        <p>Start here: three short entry points—Positive Case, Critiques and Responses, and Tests—each with optional but irresistible deep-dive Boxes.</p>
+      </div>
+
+      <div class="art">
+        <!-- Replace src with your final Starry Night image filename once added to the repo -->
+        <img src="starry_night.jpg" alt="Starry Night (placeholder image)" loading="lazy" />
+</div>
+    </div>
+  </div>
+
+  <div class="buttons" aria-label="Essay entry points">
+    <!-- Replace the href values once the three destination pages are created -->
+    <a class="round-btn" href="posCase.html" title="Positive Case">Positive Case</a>
+    <a class="round-btn" href="critiques.html" title="Critiques and Responses">Critiques and<br/>Responses</a>
+    <a class="round-btn" href="tests.html" title="Tests">Tests</a>
+  </div>
+
+  <footer>
+    📧 Email: <a href="mailto:pwatson@unm.edu">pwatson@unm.edu</a>
+    &nbsp;|&nbsp;
+    📱 Cell: <a href="tel:+15056813391">505-681-3391</a>
+  </footer>
+
+</body>
+</html>
