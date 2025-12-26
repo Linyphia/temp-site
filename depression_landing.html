@@ -144,10 +144,10 @@
       .round-btn { width: 150px; height: 150px; font-size: 1.0em; }
     }
 
-    .float-art {
+        .float-art {
       float: right;
-      width: 320px;
-      max-width: 45%;
+      width: 400px;          /* ~25% larger than prior 320px */
+      max-width: 55%;
       margin: 0 0 14px 18px;
       border-radius: 16px;
       border: 1px solid var(--card-border);
@@ -155,12 +155,16 @@
       display: block;
     }
     @media (max-width: 768px) {
-      .float-art {
-        float: none;
-        width: 100%;
-        max-width: 100%;
-        margin: 12px auto 16px;
-      }
+          .float-art {
+      float: right;
+      width: 400px;          /* ~25% larger than prior 320px */
+      max-width: 55%;
+      margin: 0 0 14px 18px;
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      background: rgba(255,255,255,0.06);
+      display: block;
+    }
     }
 
   </style>
@@ -179,7 +183,7 @@
     <div class="hero">
       <div class="text">
         <h1>Rethinking Depression: From Malfunction to Social Navigation?</h1>
-        <img class="float-art" src="starry_night.jpg" alt="Starry Night" loading="lazy" />
+        
 
 
         <p>The Social Navigation / Niche-Change Hypothesis (SNH) proposes that some episodes of severe depression are not just breakdowns of mood control, but a risky, high-gain strategy sometimes recruited when a person is trapped in an untenable social niche and ordinary negotiation has failed. </p>
@@ -187,6 +191,8 @@
         <p>SNH is not a claim that “depression is good for you,” or that all low mood or major depressive disorder is adaptive. Many episodes are likely misfires, driven primarily by disease, drugs, neurodegeneration, or evolutionary mismatch. The hypothesis is intentionally narrow: it targets a specific trigger class of depressive episodes that may nevertheless be surprisingly common in both traditional human societies and modern social ecologies.</p>
 
         <p>SNH proposes that both minor depressive states and a particular “high-gain” depressive mode are recruited under specific conditions:</p>
+
+        <img class="float-art" src="starry_night.jpg" alt="Starry Night" loading="lazy" />
 
         <ul>
           <li>Non–point-source entrapment - stuck in a web of obligations and vetoes enforced by multiple partners, not a single villain.</li>
@@ -201,10 +207,7 @@
         <p>Start here: three short entry points—Positive Case, Critiques and Responses, and Tests—each with optional but irresistible deep-dive Boxes.</p>
       </div>
 
-      <div class="art">
-        <!-- Replace src with your final Starry Night image filename once added to the repo -->
-        <img src="starry_night.jpg" alt="Starry Night (placeholder image)" loading="lazy" />
-</div>
+      
     </div>
   </div>
 
