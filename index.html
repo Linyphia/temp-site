@@ -170,6 +170,55 @@
         padding-right: 0;
       }
     }
+  
+    /* --- New: Depression + Video buttons --- */
+    .center { text-align: center; }
+
+    .pill-link {
+      display: inline-block;
+      padding: 12px 22px;
+      background-color: #f2c94c;
+      border: 2px solid #e0b000;
+      border-radius: 999px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .pill-link:hover { text-decoration: underline; }
+
+    .button-grid {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin: 18px 0 6px;
+    }
+
+    .round-link {
+      width: 170px;
+      height: 170px;
+      border-radius: 999px;
+      background: #f2c94c;
+      border: 3px solid #e0b000;
+      color: #111;
+      font-weight: bold;
+      font-size: 1.02em;
+      line-height: 1.15;
+      padding: 14px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+    .round-link:hover { filter: brightness(0.98); transform: translateY(-1px); }
+    .round-link:active { transform: translateY(0px); }
+
+    @media (max-width: 768px) {
+      .round-link { width: 150px; height: 150px; }
+    }
+
   </style>
 </head>
 <body>
@@ -182,6 +231,7 @@
         <li>Call for independent study students – Sierra Dome spider project.</li>
         <li>Spring 2026 course opportunity — The Evolution of Religiosity — scroll down for details and syllabus.</li>
         <li>Website update in progress — full site under construction.</li>
+        <li>NEW: Essays on the evolution of depression (Social Navigation / Niche-Change Hypothesis).</li>
       </ul>
     </div>
   </header>
@@ -192,6 +242,7 @@
     <a href="research.html">Research</a> |
     <a href="courses.html">Courses</a> |
     <a href="cv.html">CV</a> |
+    <a href="depression_landing.html">Depression</a> |
     <a href="contact.html">Contact</a>
   </nav>
 
@@ -257,6 +308,37 @@
   <section>
     <p>Dr. Paul J. Watson is Associate Professor of Biology at the University of New Mexico and a Faculty Affiliate of the Flathead Lake Biological Station in northwestern Montana, where he has worked since 1980. Over decades, he has taught animal behavior courses and conducted long-term research on the Sierra Dome spider’s sexual selection system, as well as many other shorter-term studies. The extensive background dataset collected on the Sierra Dome, together with many other features of this spider species, not least its exceptional observability and manipulability in field and lab, offers future investigators a uniquely powerful foundation for asking truly cutting-edge questions of broad interest about the evolution of this species’ behavior.</p>
   </section>
+
+  
+  <hr>
+
+  <section>
+    <h2>Essays: The Evolution of Depression</h2>
+    <p>
+      A new set of essays presenting the Social Navigation / Niche-Change Hypothesis (SNH) of depression is now available.
+      Start with the landing page, then choose one of the three essay streams.
+    </p>
+    <p class="center" style="margin-top: 18px;">
+      <a class="pill-link" href="depression_landing.html">Enter the Depression Essays</a>
+    </p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Featured Videos</h2>
+    <p>
+      Quick access to selected short videos hosted externally (opens in a new tab).
+    </p>
+
+    <div class="button-grid" aria-label="Featured video links">
+      <a class="round-link" href="Courtship1_BAAED6DF0F10.mov" target="_blank" rel="noopener">▶️ Vibrometry<br/>Courtship 1</a>
+      <a class="round-link" href="Courtship2_589590E62E60.mov" target="_blank" rel="noopener">▶️ Vibrometry<br/>Courtship 2</a>
+      <a class="round-link" href="VibrometrySetup.mov" target="_blank" rel="noopener">▶️ Vibrometry<br/>Screen Output</a>
+      <a class="round-link" href="VibScreenshot_D10470090C56.mov" target="_blank" rel="noopener">▶️ Vibrometry<br/>Setup Video</a>
+    </div>
+  </section>
+
 
   <hr class="squiggly" />
 
