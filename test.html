@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tests – Social Navigation / Niche Change Hypothesis</title>
+<style>
+:root{ --bg:#d6e4f4; --fg:#000000; --maxw:900px; --link:#0b3c8a; }
+body{ font-family:"Times New Roman", Times, serif; margin:0; padding:0; background:var(--bg); color:var(--fg); line-height:1.6; }
+nav{ background-color: rgba(242,201,76,0.95); text-align:center; padding:0.6em 0; }
+nav a{ color:#222; text-decoration:none; margin:0 15px; font-weight:bold; }
+nav a:hover{ text-decoration:underline; }
+a{ color:var(--link); text-decoration:underline; } a:hover{ text-decoration:none; }
+.wrap{ max-width:var(--maxw); margin:28px auto 44px; padding:0 1em; }
+
+p{ font-size:24px; margin:0 0 22px 0; }
+ul, ol{ margin:0 0 22px 1.4em; font-size:24px; }
+li{ margin-bottom:12px; }
+
+h1{ text-align:center; font-size:38px; line-height:1.15; margin:0.2em 0 0.9em 0; font-weight:700; }
+h2{ font-size:32px; margin:32px 0 16px 0; font-weight:700; }
+h3{ font-size:28px; margin:28px 0 14px 0; font-weight:700; }
+h4{ font-size:24px; margin:26px 0 12px 0; font-weight:700; }
+
+.box{ background: rgba(255,255,255,0.92); border:1px solid rgba(0,0,0,0.14); border-radius:14px; padding:18px 20px; margin:22px 0 26px 0; }
+.box::before,.box::after{ content:""; display:block; height:2px; background:linear-gradient(to right, rgba(0,0,0,0.10), rgba(0,0,0,0.28), rgba(0,0,0,0.10)); width:100%; border-radius:999px; }
+.box::before{ margin-bottom:14px; } .box::after{ margin-top:14px; }
+.box-title{ font-weight:700; font-size:22px; margin:0 0 14px 0; }
+.box p{ font-size:24px; margin:0 0 18px 0; }
+.box ul, .box ol{ font-size:24px; margin:0 0 18px 1.4em; }
+.box li{ margin-bottom:10px; }
+
+footer{ text-align:center; margin:40px 0 30px; font-size:18px; }
+
+/* Ensure this specific section heading matches other essay section headings */
+/* Force this section heading to match other section headings */
+.essay-section-h2{
+  display:block;
+  font-size: 36px !important;
+  margin: 32px 0 16px 0 !important;
+  font-weight: 700 !important;
+}
+
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="depression_landing.html">Depression</a> |
+  <a href="posCase.html">Positive Case</a> |
+  <a href="critiques.html">Critiques</a> |
+  <a href="tests.html">Tests</a>
+</nav>
+<div class="wrap">
+<h1>Testing and Falsifying the Social Navigation / Niche Change Hypothesis</h1>
+<p><strong>Overview</strong></p>
+<p>The Social Navigation / Niche-Change Hypothesis (SNH) makes strong claims. It says that a substantial subset of depressive episodes are not mere breakdowns of mood control but a coordinated, high-gain defensive strategy for a specific class of problems: non-point-source social entrapments where a better niche is visible but blocked by multiple partners. In those cases, depression is supposed to:</p>
+<p>Intensify analysis of the constraint structure (analytical rumination),</p>
+<p>Broadcast honest need (visible suffering and withdrawal), and</p>
+<p>Impose non-volitional sanctions (involuntary non-cooperation) until enough partners move.</p>
+<p>If these claims are wrong, they can and should be shown wrong. This essay sketches concrete investigations that would either support SNH or deal it serious damage. The goal is not to protect the hypothesis but to make it easy to shoot at empirically-to wire up “kill switches” that anyone with adequate data can throw.</p>
+<p>For clarity, we are testing two nested versions of SNH:</p>
+<p>The niche-change version: depression as a high-gain mode specifically deployed when a person’s socioeconomic niche (sensu Essay 1) must be changed and that change is being stubbornly blocked by multiple partners, often each for their own well-meaning or ill-intentioned reasons.</p>
+<p>The broader “complex entrapment” version: the same architecture deployed for other complex, high-stakes social negotiations that cannot be solved unilaterally (e.g., major role renegotiations, caregiving reassignments, escape from chronic exploitation), even if the person’s niche label does not change.</p>
+<p>In practice, the designs below treat non-point-source social entrapment as the core trigger class: a cluster of interlocking, multi-partner constraints that make the person’s current life configuration unsustainable-because of a serious capacity-opportunity mismatch-and prevent straightforward exit. Tests that cleanly target this trigger class will be most diagnostic for the niche-change version; tests that broaden to other high-stakes entrapments without full niche change speak to the more general SNH.</p>
+<p><strong>Core variables SNH cares about</strong></p>
+<p>SNH is not about “stress” in general, “negative life events,” “unfairness,” or “wealth and status disparities” in the abstract. It cares about:</p>
+<p>Non-point-source entrapment: situations where multiple partners (family, employers, institutions) collectively block a needed niche change, and unilateral exit is very costly or effectively impossible.</p>
+<p>A credibly better alternative niche: the existence of a realistically better configuration of roles, obligations, and supports that is more or less clearly perceived by the socially entrapped person. (Cinderella is not a story about a depressed young woman because there is no clear alternative niche for her to move into, no exit available - until the fairy-godmother / prince package appears.)</p>
+<p>Network structure and interdependence: who depends on the focal person for what (care, labor, income, social glue), how replaceable they are in each role, and whether a convenor or gatekeeper exists who can concentrate bargaining and coordinate change.</p>
+<p>Concession/Exit events: operationalized, verified changes in who does what, who decides what, and who bears which costs (reductions in workload, new roles, exits from toxic ties, acquired protections), but only insofar as these are directly relevant to the focal problem / niche change.</p>
+<p>Partner future commitments: binding promises (formal or reputational) that make continued implementation of those structural changes credible, e.g., written agreements, scheduled workload changes, funded training slots, guaranteed schedule protections.</p>
+<p>Symptom trajectory: onset, severity, and remission of depressive episodes.</p>
+<p>Any serious test of SNH needs to measure these explicitly, not just “life events” and symptom scores.</p>
+<p>Before turning to a set of forward-looking designs that do exactly that, it is worth revisiting the first serious attempt to operationalize these ideas in the field in Box G.</p>
+<div class="box">
+<div class="box-title"><strong>Box </strong><strong>G</strong><strong>:</strong><strong>  Early Naturalistic Test of SNH: Cline</strong><strong>-Brown &amp; Watson (2005)</strong></div>
+<p>My second doctoral student, also co-chaired with Randy Thornhill, was Kimberly Cline-Brown, now on the faculty at the University of Northern Iowa, Cedar Falls. Without undue coercion, Kim attempted a well-planned and effortful preliminary test of the SNH. The resulting part of her dissertation was published in a book chapter that, for various reasons, sank into obscurity with the volume it appeared in. As far as we know, however, it offers the first explicit, multi-prediction empirical test of the SNH aside from Hagen’s early postpartum-bargaining work.</p>
+<p>It is messy and under-powered in all the ways you’d expect from an unfunded, single-interviewer, community/clinic field sample, but it is not trivial. It hits several of the core SNH predictions with medium-to-huge effect sizes. It deserves a resurrection, and that starts here, long overdue.</p>
+<p><strong>Design in brief</strong></p>
+<p>Older adults (50+) from rural southwestern Mississippi were recruited via local ads and referrals from mental-health providers into a standardized interview (N = 121).</p>
+<p>Each person:</p>
+<p>Completed the Geriatric Depression Scale (GDS); scores ≥ 12 plus an independent DSM-IV diagnosis of primary MDD by clinicians = “depressed”; everyone else (GDS ≤ 11 and/or no MDD) = “non-depressed.”</p>
+<p>Gave a free-listed set of current “hindrances,” rated for how troubling they were. A rater then coded which ones were fitness-hindering (FH) in the inclusive fitness sense: currently active events (within 24 months) likely to reduce direct or inclusive fitness (e.g., “risk of becoming homeless,” “son may go to jail,” “too old to take care of grandchildren left on my doorstep”).</p>
+<p>Answered additional Likert items on social support, network responsiveness, and hope for solving problems, with and without help, constructed to track the four major SNH propositions.</p>
+<p>Analytically, they did two simple things for each prediction:</p>
+<p>Correlated the relevant scale with GDS across the full sample.</p>
+<p>Compared depressed vs non-depressed via independent-samples t-tests.</p>
+<p>What follows is exactly what the chapter reports, with p-values and Ns, plus effect-size estimates (r) derived from the t-values.</p>
+<p><strong>Prediction I - Are depressive episodes tied to current fitness</strong><strong>-hindering situations?</strong></p>
+<p>SNH says: if depression is functioning as a social-navigation system, people in an episode should almost always have live, current FH events; severity should track the magnitude of those hindrances, not just generic adversity.</p>
+<p>Findings</p>
+<p>Presence and number of FH events</p>
+<p>Depressed participants were far more likely than non-depressed to have at least one FH event: t(115) = 12.44, p ≤ .001.</p>
+<p>Depressed individuals had a mean of 3.03 FH events (out of 5 domains) vs 0.25 in the non-depressed group; this difference was also huge: t(115) = 12.04, p ≤ .001.</p>
+<p>Converting those t’s to an r-type effect size gives r ≈ .76-.75, i.e., very large separation between groups.</p>
+<p>Severity of FH vs severity of depression</p>
+<p>A composite FH “severity” score (summing how troubling each FH was) correlated extremely strongly with GDS scores: r = .81, p ≤ .001, n = 117.</p>
+<p>Take-home:</p>
+<p>In this older-adult sample, people meeting the GDS+DSM MDD criteria were almost always entangled in current, fitness-limiting situations, and depression severity rose steeply with FH severity. That is exactly the pattern SNH predicts for its target domain.</p>
+<p><strong>Prediction II - Are depressed people embedded in non</strong><strong>-supportive social networks?</strong></p>
+<p>SNH says: depression should preferentially occur where there are social partners who could help solve the FH problem but are failing to do so, i.e., networks that are either thin or quietly obstructive in the relevant domain.</p>
+<p>Findings</p>
+<p>Global perceived social support</p>
+<p>Clinically depressed participants reported much lower social support than non-depressed participants: t(114) = 8.30, p ≤ .001, r_effect ≈ .62.</p>
+<p>Across the whole sample, there was a strong negative correlation between perceived social support and depression: r = −.68, p ≤ .001, n = 116, less perceived support, higher GDS.</p>
+<p>Network ability to help with FH problems</p>
+<p>A scale capturing how useful the social network would be in solving the person’s problems was positively associated with depression: r = .33, p ≤ .001, n = 109.</p>
+<p>Interpreted in context: the more people felt their network was entangled with, or central to, their current problems, the higher their depression scores.</p>
+<p>A measure coding the number of network members “willing to help” (as operationalized in the study) was also associated with GDS: r = .59, p ≤ .001, n = 108.</p>
+<p>Given the textual description (“as GDS scores increased, the number of individuals in the social network willing to help decreased”), the coding appears to be such that higher scores reflect fewer effectively helpful partners. Either way, higher GDS goes with a more anemic/help-resistant network.</p>
+<p>Take-home:</p>
+<p>Depressed participants weren’t just sad loners; they were embedded in networks they perceived as less supportive and less likely to help solve their pressing problems, with large effect sizes in the direction SNH predicts.</p>
+<p><strong>Prediction III - Do depressed people see their problems as too complex to solve alone?</strong></p>
+<p>SNH says: the triggering problems should be perceived as cognitively and socially complex dilemmas that can’t be solved by “trying harder” alone. A clean sign is low hope of solving the problems by oneself.</p>
+<p>Findings</p>
+<p>A “hope I can solve my problems on my own” item indexing perceived solvability of one’s problems by solo effort showed that:</p>
+<p>Depressed participants were much less hopeful than non-depressed: t(101.17) = 7.126, p ≤ .001 (Welch’s t, unequal variances), r_effect ≈ .57.</p>
+<p>Across all participants, hope for solving problems alone was strongly negatively correlated with GDS: r = −.62, p ≤ .001, n = 113.</p>
+<p>Take-home:</p>
+<p>As depression scores climb, people don’t just feel bad; they increasingly judge their current problems as too difficult to fix by individual effort - exactly the “non-point-source entrapment” perception SNH builds on.</p>
+<p><strong>Prediction IV - Is there conditional hope if others step up?</strong></p>
+<p>SNH is specific about this: depressed individuals should not be globally hopeless. They should often believe that if key partners cooperated or provided more help, their problems could be solved. That is the bargaining-logic expectation.</p>
+<p>Findings</p>
+<p>A “hope I could solve my problems if I had more cooperation from family” measure showed:</p>
+<p>Depressed participants endorsed substantially more hope under the “if family cooperated” condition than non-depressed ones: t(107) = 8.52, p ≤ .001, r_effect ≈ .64.</p>
+<p>Across the sample, hope given more family cooperation was positively associated with depression: r = .66, p ≤ .001, n = 109.</p>
+<p>So the more depressed people were, the more they expressed the belief that additional cooperation from others would make their problems solvable.</p>
+<p>Take-home:</p>
+<p>That is classic SNH structure: low faith in solo solutions, high conditional hope if gatekeepers or kin would actually move. It is hard to reconcile with a pure “global hopelessness” disease picture.</p>
+<p><strong>What Cline-Brown and Watson (2005) does and does not show</strong></p>
+<p>What it supports</p>
+<p>In a heterogeneous, non-WEIRD sample that had no exposure to SNH, you see:</p>
+<p>Very strong ties between current fitness-hindering situations and depression severity (r ≈ .8).</p>
+<p>Markedly poorer and more fragile support networks around depressed individuals (t’s ~8.3; r ≈ .6; correlations −.68, .33, .59).</p>
+<p>A clear double pattern in expectations:</p>
+<p>- lower confidence in solving problems alone (t ≈ 7.1; r = −.62), and</p>
+<p>- higher conditional confidence if others cooperated (t ≈ 8.5; r = .66).</p>
+<p>Those are not subtle hints; they are large, coherent effects in the directions SNH laid out in advance.</p>
+<p>Key limitations / caveats</p>
+<p>Cross-sectional only. One time-point; the data say nothing about whether niche change actually occurred or whether symptom remission tracked concessions/exits.</p>
+<p>Messy, hybrid sample. Community elders and mental-health clinic clients in one rural U.S. region; mixed SES and health status; no systematic exclusion of non-SNH depressions beyond the GDS+DSM screen.</p>
+<p>Crude measurement and coding.</p>
+<p>FH events were coded by a single rater from free-listed “hindrances”, providing good ecological validity, but no inter-rater reliability estimates and inevitably some judgment calls.</p>
+<p>All the “prediction” variables are 1-3-item Likerts; dimensionality and internal reliability are unknown.</p>
+<p>No serious modeling of standard confounds. The interview did gather demography and non-FH stressors, but the published analyses do not present, for example, a multiple regression contrasting FH composites with canonical risk factors (illness, bereavement, finances) in the same model. We cannot say FH outperforms them, only that FH is very strongly associated with GDS.</p>
+<p>GDS + DSM as “MDD” classifier in older adults. Reasonable, but some will worry about somatic confounds and late-life cognitive issues. The GDS minimizes somatic items, but it is still a geriatric screen, not a gold-standard structured interview.</p>
+<p><strong>Why it’s still worth resurrecting</strong></p>
+<p>As a first-pass, unfunded test of the SNH predictions, this is better than many people realize. It is one of the few data sets explicitly designed around the four SNH conditions (FH presence/severity, network behavior, complexity/self-efficacy, expectation of resolution with help), and it finds nontrivial support for all four in exactly the expected directions, with big effect sizes and p’s well below 0.001 throughout.</p>
+<p>It obviously doesn’t settle anything, because it is cross‑sectional, geriatric, and statistically simple. But it does show that when you go out into a real population, like an anthropologist, and ask sincere enthusiastic participants with substantial life experience, but evolutionary naivety, about current inclusive‑fitness hindrances, and partition “hope” into solo vs with‑help components, you see the SNH architecture sitting there in people’s answers.For that reason:</p>
+<p>It deserves a clear, boxed presentation as an early naturalistic test of SNH (Cline-Brown &amp; Watson, 2005): promising but preliminary.</p>
+<p>It is worth re-analyzing the raw data in a modern framework (logistic or ordinal models with FH composites, standard confounds, and interaction terms), and making both the cleaned data and a well-edited PDF available on my website, possibly followed by a short empirical paper that foregrounds the SNH logic and finally lets the chapter do the work it was built to do.</p>
+</div>
+<p>The prospective empirical designs that follow, Designs 1-6, can be read as the next-generation, fully specified versions of what this early study was groping toward: longitudinal, mechanistic, and explicitly tied to documented Concession/Exit events and niche change.</p>
+<p><strong>Design 1: Longitudinal entrapment cohorts</strong></p>
+<p>Target populations</p>
+<p>People entering well‑defined, high‑stakes social entrapments, such as:</p>
+<p>•	Workers in collapsing industries or pay structures that poorly track increasing skills;</p>
+<p>•	Young under‑compensated academics with exploitative workloads and little or clearly unrealistic path upward;</p>
+<p>•	Caregivers with unsustainable loads, especially where potential helpers are avoidant and social support is thin;</p>
+<p>•	Spouses in clearly asymmetric, constrained marriages;</p>
+<p>•	Postpartum parents in under‑resourced contexts (see also Hagen 1999, 2002);</p>
+<p>•	Gender‑diverse adolescents and young adults whose access to an affirming, livable gendered niche is blocked by multiple gatekeepers (e.g. family refusal, school restrictions, legal bans on gender‑affirming care, discrimination in training/employment), despite a visible, well‑defined better niche (living openly in their identified gender with safety and viable socio‑economic prospects);</p>
+<p>•	Students trapped in hostile or obstructive training environments.</p>
+<p>Inclusion rule: enroll a case in Design 1 only when both (a) “better niche visible” and (b) “multi‑partner blockage” are clearly documented. Cases with generic distress but no credible alternative niche, or with point‑source obstacles (one villain who could be bypassed) do not qualify.</p>
+<p>Hagen, EH. (1999) The functions of postpartum depression. Evolution and Human Behavior 20: 325-359.</p>
+<p>Hagen, EH. (2002) Depression as bargaining: The case postpartum. Evolution and Human Behavior 23: 323-336.</p>
+<p>Key steps</p>
+<p>1.	Baseline mapping</p>
+<p>•	Assess depressive symptoms, personality, prior mood history.</p>
+<p>•	Map the person’s social niche: roles, obligations, beneficiaries, gatekeepers, leverage points. Social constraints enforcing a serious capacity‑opportunity mismatch that the subject can readily relate to should emerge from this mapping, even if they were not fully able to articulate it beforehand.</p>
+<p>Note: This essential mapping step is a major research endeavor and should include interviews with both the subject and multiple members of their social‑exchange network. It is also key for therapists treating depression.</p>
+<p>•	Code non‑point‑source entrapment: how many distinct partners would have to change their behavior (and in what ways) for a viable niche change to occur? Create an entrapment index (e.g. number of veto players × severity of their vetoes).</p>
+<p>2.	Prospective tracking (e.g. 6-24 months)</p>
+<p>•	Monthly or quarterly assessments of mood and functioning.</p>
+<p>•	Detailed timeline of:</p>
+<p>•	Events that increase entrapment (new demands that concretely hinder niche change, losses of leverage, specific failed negotiation attempts, loss of a convenor who had been organizing helping efforts);</p>
+<p>•	Events that reduce entrapment (Concession/Exit events);</p>
+<p>•	Partner commitments (policies, formal agreements, public promises).</p>
+<p>3.	Analyses</p>
+<p>•	Onset: Is the probability of entering a major depressive episode better predicted by non‑point‑source entrapment indices than by generic stress exposure or simple counts of “negative life events”?</p>
+<p>•	Remission: In those who become depressed, does symptom relief track Concession/Exit events more closely than it tracks time, symptom‑focused treatment, or self‑reported “feeling supported”?</p>
+<p>Note: SNH only predicts substantial, stable remissions when such C/E events plausibly enhance expected long‑term inclusive fitness by ameliorating the subject’s capacity‑opportunity mismatch, freeing them to exercise skills that bring about more lucrative social‑exchange interactions.</p>
+<p>•	Leading indicators: Do credible partner commitments (e.g. scheduled job changes, signed accommodations, funded escapes) predict downturns in symptoms even before the full niche change is complete?</p>
+<p>What would hurt SNH?</p>
+<p>If, after controlling for basic stress and personality:</p>
+<p>•	entrapment variables do not predict onset any better than generic stress scores, and</p>
+<p>•	Concession/Exit events do not add predictive power for remission above time, treatment, or generic support, and</p>
+<p>•	symptom improvements do not show any systematic relation to partner commitments or actual structural niche changes,</p>
+<p>then the central SNH story is in serious trouble. In addition, a substantial proportion of major depressive episodes that cannot be linked, even with careful mapping, to a socially enforced, fitness‑compromising capacity‑opportunity mismatch would fall outside the theory’s reach and weaken its claim to explain a large share of real‑world MDD.</p>
+<p><strong>Design 2: Clinical trials - symptom relief vs niche change</strong></p>
+<p>Standard care often combines medication, supportive talk, and some problem‑solving, but rarely treats social entrapment as the primary target. Moreover, a patient’s “well-being” is seldom explicitly related to changes in lifetime inclusive fitness prospects, let alone major ones, in the mind of the caregiver. For instance, helping a patient adjust their attitude such that their gratitude comes to exceed their expectations could reasonably be thought of as a high achievement relative to increasing a patient’s well‑being. Indeed, such a shift might be enormously helpful in insight‑focused therapy with non‑depressed or mildly dysphoric clients. But the deeply utilitarian regulatory mechanisms that SNH posits should be highly resistant to suffering‑relief strategies that do not move the underlying capacity-opportunity mismatch. This is just one example of how talking therapies can take their eye off the ball when they lack an evolutionary lens.</p>
+<p>Sample  </p>
+<p>• Adults entering treatment for major depression, screened (and pre‑registered) into two strata <em>using a structured assessment</em> of non‑point‑source entrapment, including who is blocking what despite ordinary negotiation attempts, and whether a better niche is realistically visible.</p>
+<p>  - Entrapment group: episodes clearly precipitated by multi‑partner, non‑point‑source constraints with a plausible better niche in sight.</p>
+<p>  - Non‑entrapment group: episodes with no such pattern, e.g., predominantly inflammatory, neurodegenerative, or ambiguous cases; a subject cannot be placed in the entrapment group unless their social group includes gatekeepers inadequately responsive to standard forms of bargaining.</p>
+<p>As in Design 1, the Entrapment group should be defined by explicit coding rules: episodes arising from non-point-source social traps where (a) the patient and coder can identify a more viable configuration (or at least a plausible class of better configurations), (b) multiple partners must change behavior or grants/permissions, and (c) the patient lacks a cheap unilateral exit. It is crucial that classification into the Entrapment vs Non-entrapment strata be done by raters blind to treatment condition and outcomes.</p>
+<p>Randomization within each stratum</p>
+<p>• Condition A - Symptom‑focused care, including standard meds and/or psychotherapy, time‑matched to B via additional supportive sessions, but no structured niche‑change work.</p>
+<p>• Condition B - SNH‑informed care, including all of A, same contact time but explicitly focused on systematic and individualized:</p>
+<p>    • Niche mapping and identification of specific constraint points.</p>
+<p>    • Discovery and elucidation of troubling capacity-opportunity mismatches inherent to the existing socioeconomic niche.</p>
+<p>    • Facilitated negotiations with key partners (family meetings, employer calls, institutional advocacy).</p>
+<p>    • Concrete plans for exit or role redesign where needed.</p>
+<p>    • Documentation of Concession/Exit events and partner commitments, with special attention to ones that increase a component of fitness that is expected to be higher in the new target niche compared to the status quo niche. We are rarely able to measure actual changes in expected lifetime inclusive fitness, but we can usually measure changes in circumstances that logically contribute to that total. Fitness‑relevant components can include new skill acquisition and use, improved status and compensation, more time spent with people in the relevant socioeconomic guild, etc. From an evolutionary point of view these are components of expected lifetime inclusive fitness, but they are measurable in ordinary socio‑economic terms.</p>
+<p>Outcomes</p>
+<p>• Primary: time to sustained remission (e.g. ≥ 50% symptom reduction maintained over 3-6 months).</p>
+<p>• Secondary: number and magnitude of Concession/Exit events, quality‑of‑life/role‑functioning, relapse rates.</p>
+<p>Predictions</p>
+<p>• In the Entrapment group, Condition B should show:</p>
+<p>  - Faster and more durable remission, mediated by Concession/Exit events.</p>
+<p>  - Lower relapse rates when structural changes are maintained.</p>
+<p>• In the Non‑entrapment group:</p>
+<p>  - At most modest added benefit from Condition B, and no strong prediction that its effects will be mediated by Concession/Exit.</p>
+<p>A damaging pattern for SNH would be: in the Entrapment group, Condition B (niche-change arm) produces no better remission or relapse profile than Condition A, even when Concession/Exit events and partner commitments are more numerous in B (i.e. social constraints really did change). That would suggest that solving the social trap is surprisingly irrelevant to depression outcomes in the very cases where SNH says it is central.</p>
+<p>The main risk in research Design 2 involves implementation slippage: half‑hearted “B” treatment, sloppy entrapment classification, or contact‑time confounds. If, after careful implementation (time‑matched, with genuine attempts at niche mapping and change), Condition B fails to outperform A in the Entrapment group, the functional claim of SNH would be seriously weakened. </p>
+<p>It is also possible that some clients will remit after moving into a new niche even if that niche turns out not to deliver the expected benefits. In SNH terms, once the regulatory machinery registers that a major change has been attempted and the old trap has been left, it may stand down the high‑gain mode and revert to ordinary low‑mood regulation even if, over longer spans, the new niche proves only marginally better.</p>
+<p><strong>Design 3: Instrumentality tests (“anti‑lure” signature)</strong></p>
+<p>Aim</p>
+<p>Test whether, in SNH‑type episodes, depression selectively suppresses motivation for non‑instrumental rewards while preserving or even enhancing motivation for rewards that directly advance niche change.</p>
+<p>Sample</p>
+<p>• Adults with a current major depressive episode.</p>
+<p>• Use the same structured entrapment assessment as in Designs 1-2 to sort participants (pre‑registered) into:</p>
+<p>- Entrapment / SNH‑type group: clear non‑point‑source social entrapment (multiple veto players blocking a visible better niche). The focal problem and candidate niche change are articulated in advance via interviewing the person and, where possible, at least one key partner.</p>
+<p>- Non‑entrapment group: depressed, but no documented non‑point‑source entrapment plus better niche (e.g. more endogenous, inflammatory, or ambiguous episodes).</p>
+<p>• Match groups on symptom severity, age, sex, and generic anhedonia (e.g., SHAPS scores) so that context, not raw misery, is the key difference.</p>
+<p>Core idea</p>
+<p>For each person, define their specific target problem and plausible niche change (from the mapping work). Then build choices around:</p>
+<p>• Non‑instrumental rewards: pleasant or status‑enhancing, but not materially helpful for this entrapment (even if fitness‑relevant in a broad sense).</p>
+<p>• Instrumental rewards: opportunities or resources that realistically advance niche change for this individual.</p>
+<p>The anti‑lure claim is: in SNH‑type episodes, the system should discount the first class much more than the second.</p>
+<p>Tasks / Method</p>
+<p>1.	Idiographic reward construction</p>
+<p>&nbsp;&nbsp;For each participant, construct two reward sets.</p>
+<p>&nbsp;&nbsp;• Non‑instrumental / hedonic set: e.g. generic money vouchers or gift cards; pleasant media or experiences; symbolic recognition (praise letters, minor awards); lessons or perks unrelated to the blocked niche (e.g. violin lessons for someone whose entrapment is about child‑care load and blocked retraining in nursing).</p>
+<p>&nbsp;&nbsp;• Instrumental set: concrete opportunities or resources that realistically advance niche change, such as a funded slot in a relevant training program; a dedicated meeting with a key gatekeeper or mediator; paid respite‑care hours for an overwhelmed caregiver; legal/financial consultations tailored to the problem; introductions or mentoring sessions with insiders in the desired niche; for gender‑diverse youth, a documented appointment with a gender‑affirming clinic or a formal meeting with school administrators about accommodations.</p>
+<p>&nbsp;&nbsp;These need to be real and credibly delivered if earned; otherwise the non‑conscious machinery is right to treat them as “just another lab game.”</p>
+<p>2.	Effort‑based choice tasks</p>
+<p>&nbsp;&nbsp;Use standard effort‑discounting paradigms:</p>
+<p>&nbsp;&nbsp;• Repeated choices between low‑effort/low‑reward vs higher‑effort/higher‑reward options within each class (hedonic and instrumental).</p>
+<p>&nbsp;&nbsp;• Direct head‑to‑head choices: “work for hedonic reward X” vs “work for instrumental reward Y” at matched nominal value.</p>
+<p>&nbsp;&nbsp;• Effort can be physical (grip, button‑press), cognitive (sustained attention, working‑memory tasks), or time‑based (extra questionnaires, follow‑up tasks).</p>
+<p>&nbsp;&nbsp;Track:</p>
+<p>&nbsp;&nbsp;• willingness to exert effort (slope of effort discounting for each reward class);</p>
+<p>&nbsp;&nbsp;• frequency of choosing instrumental over hedonic rewards when effort is equated;</p>
+<p>&nbsp;&nbsp;• self‑reported wanting/liking for each option.</p>
+<p>3.	Optional physiological / imaging add‑ons</p>
+<p>&nbsp;&nbsp;• Physiological engagement (HRV, skin conductance, pupil dilation) while contemplating / working for each reward type.</p>
+<p>&nbsp;&nbsp;• fMRI or EEG as secondary measures (striatal / medial PFC value signals), but behaviour is the primary test.</p>
+<p>Predictions</p>
+<p>1.	Entrapment / SNH‑type group</p>
+<p>&nbsp;&nbsp;• Marked relative preservation of motivation for instrumental rewards compared to non‑instrumental ones:</p>
+<p>&nbsp;&nbsp;&nbsp;- steeper effort discounting for hedonic rewards;</p>
+<p>&nbsp;&nbsp;&nbsp;- flatter effort discounting for instrumental rewards;</p>
+<p>&nbsp;&nbsp;&nbsp;- preference for instrumental rewards in head‑to‑head choices, even when hedonic options are more immediately pleasant.</p>
+<p>&nbsp;&nbsp;• Optionally, stronger physiological or neural “value” signals for instrumental vs hedonic outcomes.</p>
+<p>2.	Non‑entrapment group</p>
+<p>&nbsp;&nbsp;• More globally blunted motivation: similar effort discounting for both reward classes (everything feels “not worth it”), or if any asymmetry, no systematic tilt toward the niche‑relevant options.</p>
+<p>3.	Within‑person longitudinal prediction (bonus test)</p>
+<p>&nbsp;&nbsp;• In SNH‑type cases followed over time, anti‑lure asymmetry should be strongest when entrapment is maximal and should soften as Concession/Exit events accumulate and the niche begins to change.</p>
+<p>Contrast with generic dysregulation</p>
+<p>A generic dysregulation model expects anergia/anhedonia to suppress effort more or less uniformly once depression is severe: willingness to work for rewards drops across the board, with no systematic difference between instrumental and non‑instrumental incentives after controlling for size and immediacy.</p>
+<p>What would hurt SNH?</p>
+<p>After careful idiographic construction of rewards and proper entrapment classification, SNH’s anti‑lure mechanism is in trouble if:</p>
+<p>• Entrapment‑type depressions show no preferential motivation for instrumental rewards;</p>
+<p>• Motivation is blunted in a non‑selective, global way (or even tilted toward generic comforts rather than niche‑changing steps); and</p>
+<p>• This holds even when instrumental rewards really are highly consequential for the person’s own stated goals.</p>
+<p>In that case, the idea of anhedonia as an anti‑lure filter that preserves drive toward structural change would be badly undermined.</p>
+<p><strong>Design 4: Natural experiments on entrapment‑reducing policy changes</strong></p>
+<p>Aim</p>
+<p>Use large, plausibly exogenous policy changes to test whether reducing non‑point‑source social entrapment at scale produces corresponding reductions in depression incidence and chronicity, especially in the populations whose niches are directly affected.</p>
+<p>Settings / examples</p>
+<p>Structural reforms that predictably change people’s ability to renegotiate or exit bad niches, such as:</p>
+<p>•	labour laws (e.g. limits on mandatory overtime, paid sick‑leave, protection from summary dismissal);</p>
+<p>•	disability and caregiver‑support programs;</p>
+<p>•	marriage, adoption, and gender‑identity rights;</p>
+<p>•	veterans’ benefits and structured reintegration programs.</p>
+<p>Rationale</p>
+<p>SNH predicts that policies which:</p>
+<p>1.	reduce diffuse entrapment, and</p>
+<p>2.	make exit or renegotiation easier and cheaper for partners,</p>
+<p>should produce step‑down shifts in depression most strongly in the subgroups whose entrapment load is most directly relieved. These changes matter because they ease niche‑change negotiations within many local social circles by lowering the costs to gatekeepers of letting someone move.</p>
+<p>Method / programmatic agenda</p>
+<p>1.	Identify natural experiments</p>
+<p>•	Reforms that are large, well‑delimited in time, and plausibly exogenous to short‑term mental‑health trends (e.g. court decisions, national policy shifts, staggered state‑level roll‑outs).</p>
+<p>2.	Pre‑rate each reform on entrapment impact</p>
+<p>For each policy, pre‑specify (before looking at outcome data):</p>
+<p>•	Its expected impact on non‑point‑source entrapment (e.g. “strongly reduces caregivers’ dependence on a single employer; replaces precarious arrangements with guaranteed leave and income”).</p>
+<p>•	Which subgroups should see the largest entrapment reduction (e.g. new parents in precarious work; veterans returning from deployment; gender‑diverse youth in the affected jurisdiction).</p>
+<p>3.	Analyze with quasi‑experimental designs</p>
+<p>•	Use difference‑in‑difference or interrupted time‑series analyses comparing:</p>
+<p>•	Depression outcomes in affected vs unaffected groups, before and after the change;</p>
+<p>•	Within affected groups, those whose entrapment load is most changed vs those minimally touched.</p>
+<p>•	Outcomes could include: incidence of MDD diagnoses, antidepressant prescribing, suicide attempts, and validated symptom scales in representative surveys.</p>
+<p>•	Where feasible, incorporate proxy C/E measures (e.g. uptake of parental leave, disability benefits, gender‑affirming services, or re‑employment into better roles) as mediators.</p>
+<p>Predictions (SNH)</p>
+<p>•	Dose-response: the stronger the pre‑rated entrapment reduction for a given group, the larger the drop in depression incidence/chronicity for that group, controlling for secular trends.</p>
+<p>•	Effects should be largest in groups that were previously in exactly the traps SNH cares about (e.g. overwhelmed caregivers now guaranteed leave; veterans given structured paths into new valued roles; gender‑diverse youth gaining legal/medical access to an affirming niche).</p>
+<p>•	Where reforms are mainly symbolic or do not materially change entrapment (by our pre‑rating), SNH predicts little to no mental‑health effect.</p>
+<p>What would hurt SNH?</p>
+<p>If strong, well‑defined entrapment‑reducing reforms pre‑rated as high‑impact in SNH terms show:</p>
+<p>•	no detectable change in depression metrics in the most affected groups, despite adequate sample sizes and time series; and</p>
+<p>•	no mediation by uptake of the very exits/concessions those reforms make possible,</p>
+<p>then SNH’s claim that non‑point‑source entrapment is a major driver of depression would be seriously weakened. In that case, improvements in bargaining power and exit options would appear largely irrelevant to the epidemiology of depression.</p>
+<p><strong>Design 5: Post‑injury cohorts (integrating Box F)</strong></p>
+<p>As sketched in Box F, stroke and traumatic brain injury cohorts offer a powerful, adversarial test of dual‑route predictions: a circuit route (lesion‑network risk) and a social‑entrapment route (role loss, blocked return, weak support).</p>
+<p>Aim</p>
+<p>Test whether, after serious neural injury, depression onset and course are explained solely by lesion‑network vulnerability, or whether non‑point‑source entrapment and Concession/Exit dynamics add independent, mechanistically meaningful prediction.</p>
+<p>Sample</p>
+<p>•	Adults with first‑ever stroke, TBI, or other focal brain lesions.</p>
+<p>•	Standard imaging and lesion‑mapping sufficient to compute lesion‑network “risk” scores.</p>
+<p>•	Longitudinal follow‑up (e.g. 6-24 months) with repeated depression assessments.</p>
+<p>Measures</p>
+<p>•	Circuit route</p>
+<p>•	Lesion location and connectivity‑based “lesion‑network” depression risk, using normative connectome methods (see Box E).</p>
+<p>•	Objective disability indices (motor, language, cognitive).</p>
+<p>•	Entrapment / social route</p>
+<p>•	Structured mapping of pre‑injury niches and post‑injury role changes: job loss, loss of caregiving roles, new dependency.</p>
+<p>•	An entrapment score indexing non‑point‑source constraints on niche redesign:</p>
+<p>•	number of veto players blocking role redesign or exit;</p>
+<p>•	perceived inability to return to valued roles and lack of viable alternative niches.</p>
+<p>•	Concession/Exit (C/E) coding over time:</p>
+<p>•	documented changes in division of labour, authority, support, or living arrangements that open a new niche or make the old one tolerable;</p>
+<p>•	binding partner commitments (family, employers, institutions).</p>
+<p>Analytic strategy</p>
+<p>•	Build joint models with two main predictors:</p>
+<p>•	lesion‑network risk (circuit route);</p>
+<p>•	entrapment score (social route), plus time‑varying C/E events.</p>
+<p>•	Use survival or mixed‑effects models to predict:</p>
+<p>•	onset of first post‑injury depressive episode;</p>
+<p>•	persistence vs remission over follow‑ups;</p>
+<p>•	relapse after partial recovery.</p>
+<p>•	Test:</p>
+<p>•	incremental predictive value of entrapment variables over lesion‑network risk and disability;</p>
+<p>•	whether C/E events and partner commitments mediate remission within the high‑entrapment subgroup.</p>
+<p>Adversarial predictions</p>
+<p>•	SNH is wrong if:</p>
+<p>•	After adjusting for lesion‑network risk and disability, entrapment scores add nothing to prediction of depression onset or course; and</p>
+<p>•	Symptom trajectories show no special relationship to Concession/Exit events or partner commitments in any subgroup.</p>
+<p>Note that this design mainly tests the broader “complex entrapment” SNH. Only a subset of post‑injury cases will involve literal socioeconomic niche change (e.g. permanent job loss or role loss in family). For that subset, a stronger falsifier would be: even when the injury clearly forces niche redesign and Concession/Exit events are abundant, symptom trajectories remain better explained by lesion‑network scores than by any social‑change metric.</p>
+<p><strong>Design 6: Content and process of rumination</strong></p>
+<p>The Analytical Rumination Hypothesis and SNH both posit that early‑phase depression reallocates analytic resources to the core problem. Critics (e.g. Varga) point out that much rumination looks abstract, self‑blaming, and unproductive.</p>
+<p>Aim</p>
+<p>Test whether, in entrapment‑typed episodes, rumination shows the expected shift toward concrete, socially strategic analysis that tracks Concession/Exit events and remission or whether it remains globally abstract and self‑attacking even when the niche changes.</p>
+<p>Sample &amp; method</p>
+<p>•	Individuals in the early phase of a depressive episode, stratified by entrapment status using the same structured mapping as in Designs 1-3.</p>
+<p>•	Experience‑sampling or intensive diary methods over several weeks:</p>
+<p>•	multiple daily prompts about current thoughts, mood, and social events;</p>
+<p>•	periodic in‑depth interviews to anchor and code themes.</p>
+<p>Coding dimensions</p>
+<p>For each recorded rumination episode, code:</p>
+<p>•	Level of construal</p>
+<p>•	Abstract: global, self‑evaluative (“Why am I always like this?” “Why do people never respect me?”)</p>
+<p>•	Concrete: specific, situational (“What exactly did my boss say?” “Which duty could my sister realistically take over?”)</p>
+<p>•	Content</p>
+<p>•	Social‑contract focused (who owes what; which contracts are failing; options for renegotiation or exit);</p>
+<p>•	Generic self‑loathing / global defect attributions;</p>
+<p>•	Unrelated worries (not tied to the identified entrapment).</p>
+<p>•	Outcome</p>
+<p>•	Whether that episode yields specific, testable hypotheses or actions (e.g. “Ask X for Y by Friday,” “Look up training program Z”), versus none.</p>
+<p>Predictions (SNH)</p>
+<p>In entrapment‑typed episodes:</p>
+<p>•	Over time, there should be a detectable shift from abstract, global rumination toward more concrete, socially focused rumination especially when helpful partners or convenors are engaged.</p>
+<p>•	Transitions into more concrete, contract‑focused rumination should:</p>
+<p>•	predict subsequent Concession/Exit events (people actually make targeted asks, negotiate, or exit); and</p>
+<p>•	predict later symptom improvements, even after controlling for generic support and treatment.</p>
+<p>In non‑entrapment episodes, no particular pattern is required; rumination may remain more abstract and self‑focused, and SNH makes no strong adaptive claim there.</p>
+<p>What would weaken or falsify SNH’s cognitive story?</p>
+<p>SNH’s Phase‑1 story is in trouble if, in clearly coded entrapment cases:</p>
+<p>•	Rumination stays globally abstract and self‑attacking over time, with no systematic shift toward concrete, socially strategic content; and</p>
+<p>•	Rumination content has no predictive relationship to C/E events or remission even in cases where the social niche does change and symptoms improve.</p>
+<p>In that scenario it would be hard to argue that the cognitive phase is functioning as part of a coordinated navigation program; it would look more like pure cognitive noise running alongside whatever social process actually resolves the trap.</p>
+<p>A complementary line of work, inspired by Surbey’s (2011) findings on self‑deception and cooperation in mildly depressed students, suggests another way to probe the “withdrawal of naïve reciprocity” aspect of SNH (Box H).</p>
+<div class="box">
+<div class="box-title"><strong>Box </strong><strong>H:</strong><strong>  Cooperation thresholds as a test bed for SNH (inspired by </strong><strong>Surbey</strong><strong>, 2011)</strong></div>
+<p>One natural extension of Surbey’s work is to treat conditional cooperation as a measurable output of the social-navigation system. In her undergraduate sample, students with more self-reported depressive affect on the Beck scale reported lower dispositional self-deception and were less willing to cooperate in Prisoner’s-Dilemma-type (PD) social dilemmas, whereas moderate self-deceivers were both more optimistic and more cooperative. She interprets this as evidence that a certain amount of rosy illusion is normally functional for starting and maintaining reciprocity, with low mood emerging when those illusions collapse. Again, this is all in the mild, non-clinical range, but the pattern is suggestive.</p>
+<p>SNH suggests a more structured prediction for full-blown, entrapment-typed episodes. In clear non-point-source entrapments, we would expect depressed individuals to be especially unwilling to cooperate in situations that resemble being the “sucker” in a PD game contexts with anonymous partners, no enforceable contracts, and a history or expectation of defection. At the same time, they should remain capable of high cooperation with partners who have made costly, credible concessions or commitments (e.g. documented Concession/Exit moves or strong reputational stakes). In other words, low self-deception and reduced cooperation should not be global; they should be selectively deployed in exactly the domains where naïve reciprocity has become dangerous.</p>
+<p>This suggests a straightforward experimental direction: adapt Surbey-style PD vignettes or interactive games, but stratify participants by (i) presence vs absence of SNH-type non-point-source entrapment, and (ii) whether the “partner” in the scenario has a track record of concessions vs exploitation. A simple falsifier pops out: if, in clearly entrapment-typed depressions, cooperation is flattened across partner types - equally low toward trustworthy and exploitative others - and shows no sensitivity to prior concessions or credible commitments, that would count against the idea that the depressive system is recalibrating reciprocity thresholds in a functionally discriminating way rather than just globally shutting them down.</p>
+</div>
+<h2 class="essay-section-h2">What would actually falsify SNH?</h2>
+<p>Across Designs 1-6 (and the Cline‑Brown naturalistic test), several patterns would, taken together, seriously undermine the SNH / Niche‑Change view:</p>
+<p>1.	Entrapment irrelevance</p>
+<p>•	Non‑point‑source entrapment measures add no predictive power for episode onset or chronicity beyond generic stress exposure.</p>
+<p>•	Concession/Exit events and partner commitments do not predict remission timing.</p>
+<p>2.	No anti‑lure pattern</p>
+<p>•	Depressed individuals in clear entrapment cases show globally reduced effort, with no preferential preservation of effort for instrumental, niche‑changing rewards; effort is suppressed indiscriminately once severity is controlled.</p>
+<p>3.	Structural indifference</p>
+<p>•	Large, well‑measured policy changes that clearly reduce structural entrapment in defined populations fail to shift depression incidence, chronicity, or suicidality in those groups, and any changes show no mediation via the exits and concessions those policies were designed to open.</p>
+<p>4.	Lesion‑only story wins</p>
+<p>•	In post‑injury cohorts, lesion‑network risk fully explains depression onset and course; adding entrapment variables, C/E events, and partner commitments buys essentially nothing in prediction or explanation, even in the subset where injury plainly forces niche redesign.</p>
+<p>5.	Rumination content stays useless</p>
+<p>•	In early episodes linked to entrapment, rumination does not become more concrete or socially strategic over time, even when the social niche actually changes and symptoms improve; content shows no predictive relationship with C/E events or remission.</p>
+<p>Conclusion: If multiple strong tests like these consistently return negative, the honest conclusion would be that the SNH got the social‑functional story mostly wrong. Depression would look more like a generic, somewhat domain‑tuned dysregulation of low mood and motivation, with no special design for forcing niche change or similarly complex fitness‑reducing social problems.</p>
+<p>Conversely, if these tests return the patterns SNH predicts - especially when they beat reasonable rival models - then the hypothesis will have earned its keep. Either way, the point is to stop arguing at the level of slogans and start measuring the things that matter.</p>
+<p>For ARH‑style accounts, the key falsifier is “no measurable benefit from any form of rumination.” For SNH, the more damaging pattern is this: even in entrapment‑typed episodes where Concession/Exit events and partner commitments do eventually occur, rumination content shows no shift toward concrete, socially strategic analysis and has no predictive relationship with those events or with remission. In that case, Phase 1 looks decoupled from the social‑navigation work, and the triadic design collapses.</p>
+<p>Put bluntly: if, across designs like these, we find that non-point‑source entrapment, Concession/Exit events, partner commitments, and rumination content add nothing to our ability to predict who becomes depressed, when they recover, and how, then the Social Navigation / Niche‑Change Hypothesis will have been shown wrong in its intended domain. That is as it should be. The whole point of spelling out these tests is to make it impossible, going forward, for anyone to say that SNH “doesn’t make unique predictions” or “isn’t testable.” It does. The work now is to run the tests.</p>
+</div>
+</div>
+<footer>
+  📧 Email: <a href="mailto:pwatson@unm.edu">pwatson@unm.edu</a>
+  &nbsp;|&nbsp;
+  📱 Cell: <a href="tel:+15056813391">505-681-3391</a>
+</footer>
+</body>
+</html>
