@@ -162,7 +162,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 50px; /* spacing fix */
+      gap: 50px;
     }
 
     .intro-text {
@@ -260,6 +260,66 @@
         width: 100%;
         padding-right: 0;
       }
+    }
+
+    /* ===============================
+       RESTORED BUTTON STYLES (FIX)
+       =============================== */
+
+    .center { text-align: center; }
+
+    .pill-link {
+      display: inline-block;
+      padding: 12px 22px;
+      background-color: #cfe3b4;
+      border: 2px solid #355a18;
+      border-radius: 999px;
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .pill-link:hover { text-decoration: underline; }
+
+    a.pill-link.depression-pill {
+      background-color: #1f3a5f !important;
+      border: 2px solid #162a45 !important;
+      color: #f2c94c !important;
+    }
+    a.pill-link.depression-pill:hover {
+      filter: brightness(1.05);
+    }
+
+    .button-grid {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin: 18px 0 6px;
+    }
+
+    .round-link {
+      width: 170px;
+      height: 170px;
+      border-radius: 999px;
+      background: #4f7f2a;
+      border: 3px solid #355a18;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.02em;
+      line-height: 1.15;
+      padding: 14px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+    .round-link:hover { filter: brightness(0.98); transform: translateY(-1px); }
+    .round-link:active { transform: translateY(0px); }
+
+    @media (max-width: 768px) {
+      .round-link { width: 150px; height: 150px; }
     }
   </style>
 </head>
