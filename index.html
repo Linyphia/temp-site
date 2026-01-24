@@ -3,7 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Dr. Paul J. Watson – Evolutionary Behavioral Ecology and Psychology</title>
+
+  <!-- SEO: Meta description -->
+  <meta name="description" content="Evolutionary biologist studying animal behavior, sexual selection, human psychology, and religion, with decades-long field research, theory-driven scholarship, and mentorship that has reshaped many students’ paths." />
+
+  <!-- SEO: Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Paul J. Watson",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "Evolutionary Biologist",
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "name": "University of New Mexico",
+        "department": "Department of Biology",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Albuquerque",
+          "addressRegion": "NM",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "Flathead Lake Biological Station",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "University of Montana"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Polson",
+          "addressRegion": "MT",
+          "addressCountry": "US"
+        }
+      }
+    ],
+    "description": "Evolutionary biologist studying animal behavior, sexual selection, human psychology, and religion, with decades-long field research, theory-driven scholarship, and mentorship that has reshaped many students’ paths.",
+    "url": "https://drpjwatson.org",
+    "email": "mailto:pwatson@unm.edu",
+    "knowsAbout": [
+      "Evolutionary Behavioral Ecology",
+      "Animal Behavior",
+      "Sexual Selection",
+      "Behavioral Ecology",
+      "Evolutionary Psychology",
+      "Evolution of Depression",
+      "Evolution of Religiosity",
+      "Human Coalitional Psychology"
+    ]
+  }
+  </script>
+
+  <!-- SEO: ResearchProject schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchProject",
+    "name": "An Integrative Field–Molecular Study of the Sexual Selection System of the Sierra Dome Spider",
+    "description": "A long-term evolutionary behavioral ecology research project examining the sexual selection system of the Sierra Dome spider through an integrative combination of detailed field observation and ongoing molecular biology research. The project investigates how individual variation, developmental trajectories, and biological condition shape mating behavior, mate and sire selection, and fitness outcomes, with particular attention to the interaction between behavioral strategies and underlying physiological and microbial constraints.",
+    "status": "Active",
+    "researchArea": [
+      "Evolutionary Behavioral Ecology",
+      "Sexual Selection",
+      "Animal Behavior",
+      "Evolutionary Biology"
+    ],
+    "keywords": [
+      "sexual selection",
+      "integrative field–molecular biology",
+      "behavioral variation",
+      "developmental trajectories",
+      "mating systems",
+      "polyandry",
+      "fitness trade-offs",
+      "host–pathogen interactions",
+      "microbiome"
+    ],
+    "principalInvestigator": {
+      "@type": "Person",
+      "name": "Paul J. Watson",
+      "url": "https://drpjwatson.org"
+    },
+    "location": {
+      "@type": "Place",
+      "name": "Flathead Lake Biological Station",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Polson",
+        "addressRegion": "MT",
+        "addressCountry": "US"
+      }
+    }
+  }
+  </script>
+
   <style>
     body {
       font-family: Georgia, serif;
@@ -20,12 +119,6 @@
       align-items: center;
       padding: 1em;
       border-bottom: 2px solid #6a8f3a;
-    }
-
-    .alert-icon {
-      font-size: 2.2em;
-      margin-right: 1em;
-      margin-left: 0.5em;
     }
 
     .alerts {
@@ -69,6 +162,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      gap: 40px; /* spacing fix */
     }
 
     .intro-text {
@@ -125,9 +219,11 @@
       text-align: left;
     }
 
-    section p { font-size: 1.25em; line-height: 1.55; }
-    section li { font-size: 1.25em; line-height: 1.55; }
-
+    section p,
+    section li {
+      font-size: 1.25em;
+      line-height: 1.55;
+    }
 
     .caption {
       text-align: center;
@@ -139,15 +235,6 @@
       margin: 40px 0;
       font-size: 1.1em;
       text-align: center;
-    }
-
-    .squiggly {
-      border: none;
-      height: 20px;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20"><path d="M0 10 Q 25 0 50 10 T 100 10 T 150 10 T 200 10" stroke="%23666" fill="transparent" stroke-width="2"/></svg>') repeat-x;
-      background-size: 200px 20px;
-      margin: 40px auto;
-      width: 90%;
     }
 
     .large-image {
@@ -174,106 +261,47 @@
         padding-right: 0;
       }
     }
-  
-    /* --- New: Depression + Video buttons --- */
-    .center { text-align: center; }
-
-    .pill-link {
-      display: inline-block;
-      padding: 12px 22px;
-      background-color: #cfe3b4;
-      border: 2px solid #355a18;
-      border-radius: 999px;
-      color: #ffffff;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .pill-link:hover { text-decoration: underline; }
-
-    .button-grid {
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      flex-wrap: wrap;
-      margin: 18px 0 6px;
-    }
-
-    .round-link {
-      width: 170px;
-      height: 170px;
-      border-radius: 999px;
-      background: #4f7f2a;
-      border: 3px solid #355a18;
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 1.02em;
-      line-height: 1.15;
-      padding: 14px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-    }
-    .round-link:hover { filter: brightness(0.98); transform: translateY(-1px); }
-    .round-link:active { transform: translateY(0px); }
-
-    @media (max-width: 768px) {
-      .round-link { width: 150px; height: 150px; }
-    }
-
-  
-/* Starry Night palette for Depression button */
-a.pill-link.depression-pill{
-  background-color: #1f3a5f !important;
-  border: 2px solid #162a45 !important;
-  color: #f2c94c !important;
-}
-a.pill-link.depression-pill:hover{
-  filter: brightness(1.05);
-}
-
-</style>
+  </style>
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="alerts">
-      <ul>
-        <li>Call for research associates / independent study students – Sierra Dome spider project.</li>
-        <li>Spring 2026 course opportunity — The Evolution of Religiosity — scroll down for details and syllabus.</li>
-        <li>Website updates are in progress.</li>
-        <li>NEW: Essays on the evolution of depression: the Social Navigation / Niche Change Hypothesis.</li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="research.html">Research</a> |
-    <a href="courses.html">Courses</a> |
-    <a href="cv.html">CV</a> |
-    <a href="depression_landing.html">Depression</a>
-  </nav>
-
-  <!-- Intro -->
-  <div class="intro">
-    <div class="intro-text">
-      <div class="identity-block">
-        <div class="name">Dr. Paul J. Watson</div>
-        <div class="line">Evolutionary Behavioral Ecology</div>
-        <div class="line">Department of Biology</div>
-        <div class="line">University of New Mexico</div>
-      </div>
-      <hr>
-      <h1>Website Updates in Progress</h1>
-      <p>The official website for Dr. Paul J. Watson is transferring to a new home.</p>
-    </div>
-    <img src="portrait.jpg" alt="Portrait of Dr. Paul J. Watson" />
+<header>
+  <div class="alerts">
+    <ul>
+      <li>Call for research associates / independent study students – Sierra Dome spider project.</li>
+      <li>Spring 2026 course opportunity — The Evolution of Religiosity — scroll down for details and syllabus.</li>
+      <li>Website updates are in progress.</li>
+      <li>NEW: Essays on the evolution of depression: the Social Navigation / Niche Change Hypothesis.</li>
+    </ul>
   </div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="research.html">Research</a> |
+  <a href="courses.html">Courses</a> |
+  <a href="cv.html">CV</a> |
+  <a href="depression_landing.html">Depression</a>
+</nav>
+
+<div class="intro">
+  <div class="intro-text">
+    <div class="identity-block">
+      <div class="name">Dr. Paul J. Watson</div>
+      <div class="line">Evolutionary Behavioral Ecology</div>
+      <div class="line">Department of Biology</div>
+      <div class="line">University of New Mexico</div>
+    </div>
+    <hr>
+    <h1>Website Updates are in Progress</h1>
+    <p>
+      The official website for Dr. Paul J. Watson<br>
+      has transfered to a new and better home.
+    </p>
+  </div>
+  <img src="portrait.jpg" alt="Portrait of Dr. Paul J. Watson" />
+</div>
 
   <hr>
 
