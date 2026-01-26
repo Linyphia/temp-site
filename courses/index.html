@@ -11,7 +11,7 @@
       font-family: Georgia, serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f6f2;
+      background-color: #f3f5f0;
       color: #222;
       line-height: 1.6;
     }
@@ -83,26 +83,31 @@
       border-radius: 6px;
     }
 
-    .reflection {
-      margin: 60px auto;
-      font-size: 1.1em;
+    .gateway-pair {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 80px auto 60px;
+      max-width: 900px;
+      flex-wrap: wrap;
+    }
+
+    .gateway {
+      flex: 1 1 380px;
       text-align: center;
-      max-width: 700px;
     }
 
-    .organism-aside {
-      margin: 70px auto;
-      text-align: center;
-      max-width: 700px;
+    .gateway img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 6px;
     }
 
-    .organism-aside a {
-      text-decoration: none;
-      color: #004488;
-    }
-
-    .organism-aside a:hover {
-      text-decoration: underline;
+    .gateway-text {
+      margin-top: 12px;
+      font-size: 1em;
+      color: #444;
     }
 
     .valediction {
@@ -135,7 +140,6 @@
 
 <section>
 
-  <!-- Opening statement -->
   <div class="opening-text">
     <p>
       I first came to the
@@ -178,48 +182,58 @@
   <!-- Student photo stream -->
   <div class="photo-stream">
 
-    <!-- early / mid fieldwork -->
     <img src="images/IMG_4474.jpeg" alt="Students working in the field">
-    <img src="images/IMG_4476.jpeg" alt="Students engaged in field discussion">
+    <img src="images/IMG_4476.jpeg" alt="Students engaged in discussion outdoors">
 
-    <!-- sensory learning -->
     <img src="images/IMG_5090.jpeg" alt="Students experiencing ponderosa pine bark">
 
-    <!-- Symbolic captioned image -->
-  <figure>
-    <img src="images/IMG_students_learning_to_fly.jpeg" alt="Students in meadow">
-    <figcaption>
-      <strong>Purpose of course: Learning To Fly</strong.
-    </figcaption>
-  </figure>
+    <figure>
+      <img src="images/IMG_4488.jpeg" alt="Students in meadow">
+      <figcaption><strong>A Goal of the Course: Learning to Fly.</strong></figcaption>
+    </figure>
 
-    <!-- hands-on science -->
-    <img src="images/IMG_4500.jpeg" alt="Students working with organisms in the field">
+    <img src="images/IMG_4500.jpeg" alt="Hands-on fieldwork with organisms">
     <img src="images/DSCN4065_Original.jpeg" alt="Collaborative fieldwork at picnic table">
 
-    <!-- late sequence: recognition -->
-    <img src="images/20240816_123011.jpeg"
-         alt="Student field assistant recording observations">
+    <img src="images/PAI2001_Original.jpeg" alt="Student field assistant recording observations">
+
+    <img src="images/IMG_5086.jpeg" alt="Students resting and observing landscape">
+    <img src="images/IMG_5099.jpeg" alt="Students in alpine field setting">
 
   </div>
 
-  <!-- Spider research gateway -->
-  <div class="organism-aside">
-    <a href="../research.html">
-      <img src="images/Keyara's first marked mature male.jpeg"
-           alt="Individually marked male Sierra Dome spider">
-    </a>
-    <figcaption>
-      Individually marked male Sierra Dome spider (long-term field tracking).
-    </figcaption>
+  <!-- Research gateways -->
+  <div class="gateway-pair">
+
+    <div class="gateway">
+      <a href="../research.html">
+        <img src="images/Keyara's first marked mature male.jpg"
+             alt="Individually marked male Sierra Dome spider">
+      </a>
+      <div class="gateway-text">
+        Ongoing field and laboratory research on the sexual selection system of the Sierra Dome spider.
+      </div>
+    </div>
+
+    <div class="gateway">
+      <a href="adela/">
+        <img src="images/adela4_Original.jpeg"
+             alt="Ocean Spray Fairy Moth">
+      </a>
+      <div class="gateway-text">
+        Exploratory work on the mating system of the <strong>Ocean Spray Fairy Moth</strong>
+        (<em>Adela septentrionella</em>).
+      </div>
+    </div>
+
   </div>
 
   <!-- Valediction -->
   <figure class="valediction">
-    <img src="images/IMG_boulder_valediction.jpeg"
-         alt="Paul J. Watson resting in alpine field site">
+    <img src="images/IMG_4498.jpeg"
+         alt="Paul J. Watson resting at alpine field site">
     <figcaption>
-      “When I can get my gratitude to exceed my expectations, ahhh, those are really good days.”<br>
+      “On days when I can get my gratitude to exceed my expectations, ahhh..., those are really good days.”<br>
       — Ray Wylie Hubbard
     </figcaption>
   </figure>
